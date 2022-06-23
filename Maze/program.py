@@ -1,8 +1,8 @@
 import json
 
 wall_character = "██"
-nothing = "  "
-player = "🦍"
+nothing =        "  "
+player =         "00"
 
 with open("maze.json", "r") as f:
     data = json.load(f)

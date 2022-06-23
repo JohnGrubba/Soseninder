@@ -7,14 +7,12 @@ app = Tk()
 btns = []
 
 def dump():
-    print("Kock")
     data = {"fields": []}
     data["size"] = size
     for btn in btns:
         data["fields"].append({"x": btn.x, "y": btn.y, "wall": btn.activated})
     with open("maze.json", "w") as f:
         json.dump(data, f)
-    print("Saved")
 
 def onkick(arg):
     arg.config(bg="#420cad")
@@ -26,6 +24,13 @@ def entkick(arg):
     arg.activated = False
     dump()
 
+def clear():
+    for btn in btns:
+        btn.config(bg="#ffffff")
+        btn.activated = False
+    dump()
+
+Button(app, text="🦍", command=clear).grid(row=size[0]+1,columnspan=size[1])
 for x in range(size[0]):
     for y in range(size[1]):
         btn = Button(app, width=2, height=1)

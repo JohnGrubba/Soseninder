@@ -33,5 +33,4 @@ while mom.not_screaming():
         pornhub.watch_video()
         fortnite.cum()
         door.open()
-
-fortnite.rage_quit()
+Koks nutten gORDERNR BEALU IÜ WÜE OISA ÜWA SHNÖOU
